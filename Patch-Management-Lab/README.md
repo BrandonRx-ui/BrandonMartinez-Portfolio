@@ -1,34 +1,35 @@
-# Password Reset & Account Access Workflow
+# Software Installation & Patch Management Lab
 
 ## Overview
-This project simulates common account access issues such as password lockouts, expired credentials, and forgotten passwords. It demonstrates my ability to securely reset accounts, verify user identity, and restore access while documenting the process clearly.
+This project simulates common software installation and patch management tasks in a store environment. It demonstrates my ability to deploy applications, apply updates, and verify system stability while documenting the process clearly.
 
 ## Tools Used
 - VMware Workstation Player (virtualization environment)
-- Windows Server VM (Active Directory Domain Services)
-- Windows 10 Evaluation VM (client machine)
-- PowerShell for account management
+- Windows 10 Evaluation VM
+- Common applications (web browsers, POS updates, utilities)
+- PowerShell for automation
+- Windows Update and patch management tools
 
 ## Steps Taken
-1. Set up Active Directory with sample user accounts.  
-2. Simulated account issues (lockouts, expired passwords, forgotten credentials).  
-3. Verified user identity following standard help desk procedures.  
-4. Reset passwords using Active Directory Users and Computers (ADUC) and PowerShell.  
-5. Documented troubleshooting workflow and captured screenshots.  
+1. Installed baseline applications (browser, POS software, utilities).  
+2. Simulated outdated versions with missing patches.  
+3. Applied updates manually and through automated scripts.  
+4. Verified installation success and system stability.  
+5. Documented workflow and captured screenshots.  
 
 ## Outcomes
-- Demonstrated secure account management practices.  
-- Improved ability to handle common user access issues.  
+- Demonstrated ability to manage software lifecycle.  
+- Improved system reliability through consistent patching.  
 - Produced clear documentation for repeatable workflows.  
 
 ## Screenshots
 Screenshots are stored in the [`assets`](assets/) folder.  
-- [Account Lockout Screenshot](assets/account-lockout.png)  
-- [Password Reset Screenshot](assets/password-reset.png)  
-- [Successful Login Screenshot](assets/login-success.png)  
+- [Outdated Software Screenshot](assets/outdated-software.png)  
+- [Patch Installation Screenshot](assets/patch-installation.png)  
+- [Verification Screenshot](assets/verification-success.png)  
 
 ## Artifacts
 Supporting files are stored in dedicated folders:  
-- [`configs`](configs/) → Active Directory settings, group policy configs  
-- [`scripts`](scripts/) → PowerShell scripts for password resets and account unlocks  
-- [`assets`](assets/) → Screenshots of account lifecycle
+- [`configs`](configs/) → Installation logs, patch configuration files  
+- [`scripts`](scripts/) → PowerShell/Bash scripts for automated installs and updates  
+- [`assets`](assets/) → Screenshots of installation and patch lifecycle
