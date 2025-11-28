@@ -21,17 +21,17 @@ Hi, I’m Brandon Martinez. I enjoy learning new things and challenging myself t
 - [Software Installation & Patch Management Lab](Patch-Management-Lab/README.md)
 
 ### 🌐 Network & Infrastructure Projects
-- Store Network Topology Design
-- Network Monitoring & Alert Dashboard
-- VPN & Remote Access Setup
-- Firewall & ACL Configuration Lab
+- [Store Network Topology Design](Store-Network-Topology-Design/README.md)
+- [Network Monitoring & Alert Dashboard](Network-Monitoring-Alert-Dashboard/README.md)
+- [VPN & Remote Access Setup](VPN-Remote-Access-Setup/README.md)
+- [Firewall & ACL Configuration Lab](Firewall-ACL-Configuration-Lab/README.md)
 
 ### 💻 Automation & Efficiency Projects
-- Python Log Analysis Tool
-- PowerShell User Account Automation
-- Bash Backup Script
-- Python Network Scanner
-- Automated Ticket Report Generator
+- [Python Log Analysis Tool](Python-Log-Analysis-Tool/README.md)
+- [PowerShell User Account Automation](PowerShell-User-Account-Automation/README.md)
+- [Bash Backup Script](Bash-Backup-Script/README.md)
+- [Python Network Scanner](Python-Network-Scanner/README.md)
+- [Automated Ticket Report Generator](Automated-Ticket-Report-Generator/README.md)
 
 ## 📖 How to Use This Portfolio
 Each project has:
