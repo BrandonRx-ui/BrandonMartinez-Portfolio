@@ -77,14 +77,14 @@ I simulated a printer issue by misconfiguring the port:
 ---
 
 ## 🔥 Step 5: Firewall Troubleshooting
-I simulated a firewall issue by blocking Java:
-- Blocked `java.exe` → POS failed to launch  
+I simulated a firewall issue by blocking Unicenta:
+- Blocked `unicenta-opos.exe` → POS failed to launch  
 - Removed rule → POS worked again  
 
-📂 Config: [Firewall-Rule-Java.json](configs/Firewall-Rule-Java.json)  
+📂 Config: [Firewall-Rule-Unicenta.json](configs/Firewall-Rule-Unicenta.json)  
 
 📸 Screenshots:  
-[![Firewall Rule Java](assets/firewall-rule-java.png)](assets/firewall-rule-java.png)  
+[![Firewall Rule Java](assets/firewall-rule-Unicenta.png)](assets/firewall-rule-Unicenta.png)  
 [![POS Firewall Blocked](assets/pos-firewall-blocked.png)](assets/pos-firewall-blocked.png)  
 [![POS Firewall Fixed](assets/pos-firewall-fixed.png)](assets/pos-firewall-fixed.png)  
 
