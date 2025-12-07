@@ -1,0 +1,9 @@
+Categories:
+- Produce
+- Dairy
+- Bakery
+
+Products:
+- Apple (Code: 1001, Produce, $0.99)
+- Milk (Code: 1002, Dairy, $2.49)
+- Bread (Code: 1003, Bakery, $1.99)
