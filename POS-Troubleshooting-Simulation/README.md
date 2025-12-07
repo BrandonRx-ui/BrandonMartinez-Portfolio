@@ -51,7 +51,7 @@ I configured the POS system with a test store, categories, and products:
 ## 🧾 Step 3: Test Sale Workflow
 I ran a test sale to confirm the POS was working:
 - Added Apple, Milk, Bread  
-- Closed ticket → Paid $5 cash  
+- Closed ticket → Paid $6 cash  
 - Change due: $0.53  
 
 📂 Config: [Test-Sale.txt](configs/Test-Sale.txt)  
