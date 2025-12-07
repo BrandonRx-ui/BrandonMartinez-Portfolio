@@ -1,0 +1,4 @@
+Locale: en_US
+Currency Symbol: $
+Example: $2.49
+Notes: Default install showed Euro (€). Changed to USD.
