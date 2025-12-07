@@ -1,0 +1,6 @@
+Printer: Receipt Printer (Simulation)
+Driver: Generic/Text Only
+Wrong Port: LPT1
+Correct Ports: USB001, TCP/IP (192.168.1.50)
+
+Notes: Misconfigured to LPT1 for troubleshooting. Fixed by switching to USB001.
