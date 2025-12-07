@@ -1,6 +1,9 @@
 Printer: Receipt Printer (Simulation)
 Driver: Generic/Text Only
-Wrong Port: LPT1
-Correct Ports: USB001, TCP/IP (192.168.1.50)
+Wrong Port: LPT1 (legacy parallel port, no device attached in VM)
+Correct Port: FILE: (valid virtual output)
 
-Notes: Misconfigured to LPT1 for troubleshooting. Fixed by switching to USB001.
+Notes:
+- Misconfigured to LPT1 → no receipt printed because VM has no parallel hardware.
+- Fixed by switching to FILE: → POS completed print job successfully.
+- Demonstrates identifying a misconfiguration and applying the correct fix.
