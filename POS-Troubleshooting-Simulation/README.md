@@ -64,7 +64,7 @@ I ran a test sale to confirm the POS was working:
 ## 🖨️ Step 4: Printer Troubleshooting
 I simulated a printer issue by misconfiguring the port:
 - Wrong port: LPT1  
-- Fixed port: USB001  
+- Fixed port: FILE  
 
 📂 Config: [Printer-Ports.txt](configs/Printer-Ports.txt)  
 
