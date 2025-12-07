@@ -1,0 +1,7 @@
+Sale Workflow:
+1. Added Apple, Milk, Bread
+2. Closed Ticket → Payment dialog
+3. Payment Method: Cash
+4. Tendered: $5.00
+5. Change Due: $0.53
+6. Receipt: Failed (printer misconfigured to LPT1)
