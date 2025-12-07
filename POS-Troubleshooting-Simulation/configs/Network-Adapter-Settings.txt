@@ -1,0 +1,11 @@
+Adapter Type: NAT
+Status: Disabled (for simulation)
+IP: 192.168.0.101
+Subnet: 255.255.255.0
+Gateway: 192.168.0.1
+DNS: 8.8.8.8, 1.1.1.1
+
+Simulation Notes:
+- Disabled adapter in VMware → POS lost connectivity
+- Ran ipconfig /all, ping, nslookup
+- Re-enabled adapter → POS sale succeeded
