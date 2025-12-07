@@ -1,0 +1,4 @@
+Store Name: Test Store
+Address: 123 Demo Street, San Antonio, TX
+Notes: Lab environment store for troubleshooting
+Register: Implicit (workstation acts as POS register)
