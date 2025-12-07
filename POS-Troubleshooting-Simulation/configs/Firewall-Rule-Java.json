@@ -1,0 +1,10 @@
+{
+  "RuleName": "Block Java Runtime",
+  "Program": "C:\\Program Files\\Java\\jre1.8.0_471\\bin\\java.exe",
+  "Action": "Block",
+  "Direction": "Inbound + Outbound",
+  "Protocol": "Any",
+  "Enabled": true,
+}
+
+Notes: Blocking Java runtime prevents uniCenta POS from launching.
