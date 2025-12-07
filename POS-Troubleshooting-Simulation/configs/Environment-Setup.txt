@@ -1,0 +1,14 @@
+VM Specs: 2 vCPU, 4 GB RAM, 60 GB disk
+OS: Windows 10 Pro (Evaluation ISO)
+Networking: NAT
+Snapshot: Clean OS
+
+Installed Software:
+- Windows 10 ISO
+- Java Runtime (JRE 8)
+- uniCenta POS (Core plugins, Derby DB)
+- XAMPP (installed to C:\xampp)
+- osTicket
+
+Notes:
+- Apache and MySQL started successfully after XAMPP install.
