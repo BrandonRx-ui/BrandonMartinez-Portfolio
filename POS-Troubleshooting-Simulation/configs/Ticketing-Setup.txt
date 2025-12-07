@@ -1,0 +1,18 @@
+Departments:
+- IT Help Desk
+- POS Support
+- Networking
+
+Help Topics:
+- Printer Issue
+- Network Drop
+- Firewall Block
+
+Agent:
+- Brandon Martinez (POS Support)
+
+Example Ticket:
+Issue: Receipt printer not printing
+Root Cause: Wrong port (LPT1)
+Resolution: Changed to USB001
+Status: Closed
