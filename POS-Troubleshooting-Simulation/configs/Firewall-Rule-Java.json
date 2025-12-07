@@ -6,5 +6,4 @@
   "Protocol": "Any",
   "Enabled": true,
 }
-
--Notes: Blocking Java runtime prevents uniCenta POS from launching.
+Notes: Blocking Java runtime prevents uniCenta POS from launching.
