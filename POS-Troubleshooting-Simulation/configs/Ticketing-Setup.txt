@@ -1,3 +1,5 @@
+osTicket Configuration
+----------------------
 Departments:
 - IT Help Desk
 - POS Support
@@ -9,10 +11,8 @@ Help Topics:
 - Firewall Block
 
 Agent:
-- Brandon Martinez (POS Support)
+- Brandon Martinez
 
-Example Ticket:
-Issue: Receipt printer not printing
-Root Cause: Wrong port (LPT1)
-Resolution: Changed to USB001
-Status: Closed
+Notes:
+Tickets logged for each simulated issue.
+All tickets resolved and closed.
