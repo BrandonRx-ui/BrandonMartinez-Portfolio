@@ -1,14 +1,18 @@
-VM Specs: 2 vCPU, 4 GB RAM, 60 GB disk
-OS: Windows 10 Pro (Evaluation ISO)
-Networking: NAT
-Snapshot: Clean OS
+Windows 10 Pro VM Setup
+-----------------------
+vCPU: 2
+RAM: 4 GB
+Disk: 60 GB
+Network: NAT
+Snapshot: Taken after clean OS install
 
 Installed Software:
-- Windows 10 ISO
-- Java Runtime (JRE 8)
-- uniCenta POS (Core plugins, Derby DB)
+- Java Runtime Environment (JRE 8)
+- uniCenta POS
 - XAMPP (installed to C:\xampp)
 - osTicket
+- MySQL Server (used as the database backend for uniCenta)
 
 Notes:
-- Apache and MySQL started successfully after XAMPP install.
+- UAC disabled for smoother installation
+- Windows Firewall left enabled for simulation testing
