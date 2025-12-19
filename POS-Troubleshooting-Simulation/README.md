@@ -3,7 +3,8 @@
 ## 📖 Overview
 I built this lab to simulate a real-world Point of Sale (POS) environment and practice IT troubleshooting.  
 The setup uses **uniCenta POS** running inside a Windows 10 VM, with intentional misconfigurations (printer, firewall, network) to replicate common Help Desk issues.  
-I also configured **osTicket** as a ticketing system to log and resolve each issue, just like I would in a professional IT workflow.
+I also configured **osTicket** as a ticketing system to log and resolve each issue, just like I would in a professional IT workflow.  
+The uniCenta POS system was configured to use a **MySQL database** for improved stability and realism.
 
 ---
 
@@ -17,13 +18,15 @@ Installed software:
 - uniCenta POS (Core plugins, Derby DB)  
 - XAMPP (installed to `C:\xampp` to avoid UAC issues)  
 - osTicket  
+- **MySQL Server (used as the database backend for uniCenta)**  
 
-📂 Config: [Environment-Setup.txt](configs/Environment-Setup.txt)  
+📂 Config: [Environment-Setup.txt](configs/Environment-Setup.txt)
 
 📸 Screenshots:  
 [![VMware Windows 10](assets/vmware-win10.png)](assets/vmware-win10.png)  
 [![Java Version](assets/java-version.png)](assets/java-version.png)  
-[![XAMPP Dashboard](assets/xampp-dashboard.png)](assets/xampp-dashboard.png)
+[![XAMPP Dashboard](assets/xampp-dashboard.png)](assets/xampp-dashboard.png)  
+[![MySQL Installed](assets/mysql-installed.png)](assets/mysql-installed.png)
 
 ---
 
@@ -38,7 +41,7 @@ I configured the POS system with a test store, categories, and products:
 📂 Configs:  
 - [Store-Setup.txt](configs/Store-Setup.txt)  
 - [Product-Setup.txt](configs/Product-Setup.txt)  
-- [Currency-Setup.txt](configs/Currency-Setup.txt)  
+- [Currency-Setup.txt](configs/Currency-Setup.txt)
 
 📸 Screenshots:  
 [![Store Creation](assets/store-creation.png)](assets/store-creation.png)  
@@ -54,7 +57,7 @@ I ran a test sale to confirm the POS was working:
 - Closed ticket → Paid $6 cash  
 - Change due: $0.53  
 
-📂 Config: [Test-Sale.txt](configs/Test-Sale.txt)  
+📂 Config: [Test-Sale.txt](configs/Test-Sale.txt)
 
 📸 Screenshot:  
 [![POS Sale Success](assets/pos-sale-success.png)](assets/pos-sale-success.png)
@@ -66,29 +69,29 @@ I simulated a printer issue by misconfiguring the port:
 - Wrong port: LPT1  
 - Fixed port: FILE  
 
-📂 Config: [Printer-Ports.txt](configs/Printer-Ports.txt)  
+📂 Config: [Printer-Ports.txt](configs/Printer-Ports.txt)
 
 📸 Screenshots:  
 [![Printer Wrong Port](assets/printer-wrong-port.png)](assets/printer-wrong-port.png)  
-[![Printer Fixed Port](assets/printer-fixed-port.png)](assets/printer-fixed-port.png)  
+[![Printer Fixed Port](assets/printer-fixed-port.png)](assets/printer-fixed-port.png)
 
 🎫 Ticket logged in osTicket: “Receipt printer not printing”
 
 ---
 
-## 🔥 Step 5: Firewall Troubleshooting
-I simulated a firewall issue by blocking Unicenta:
-- Blocked `unicenta-opos.exe` → POS failed to launch  
-- Removed rule → POS worked again  
+## 🔥 Step 5: Firewall Troubleshooting  
+I simulated a firewall issue by blocking **MySQL** instead of the POS application:
+- Blocked `mysqld.exe` → uniCenta could not connect to the database  
+- Removed rule → POS connected normally again  
 
-📂 Config: [Firewall-Rule-Unicenta.json](configs/Firewall-Rule-Unicenta.json)  
+📂 Config: [Firewall-Rule-MySQL.json](configs/Firewall-Rule-MySQL.json)
 
 📸 Screenshots:  
-[![Firewall Rule Unicenta](assets/firewall-rule-Unicenta.png)](assets/firewall-rule-Unicenta.png)  
-[![POS Firewall Blocked](assets/pos-firewall-blocked.png)](assets/pos-firewall-blocked.png)  
-[![POS Firewall Fixed](assets/pos-firewall-fixed.png)](assets/pos-firewall-fixed.png)  
+[![MySQL Firewall Rule](assets/mysql-firewall-rule.png)](assets/mysql-firewall-rule.png)  
+[![POS MySQL Blocked](assets/pos-mysql-blocked.png)](assets/pos-mysql-blocked.png)  
+[![POS MySQL Restored](assets/pos-mysql-restored.png)](assets/pos-mysql-restored.png)
 
-🎫 Ticket logged in osTicket: “POS blocked by firewall”
+🎫 Ticket logged in osTicket: “POS unable to connect to database (MySQL blocked by firewall)”
 
 ---
 
@@ -99,11 +102,11 @@ I simulated a network drop:
 - Re-enabled adapter → POS sale succeeded  
 
 📂 Config: [Network-Adapter-Settings.txt](configs/Network-Adapter-Settings.txt)  
-📂 Script: [Network-Quick-Diag.ps1](scripts/Network-Quick-Diag.ps1)  
+📂 Script: [Network-Quick-Diag.ps1](scripts/Network-Quick-Diag.ps1)
 
 📸 Screenshots:  
 [![POS Error Network](assets/pos-error-network.png)](assets/pos-error-network.png)  
-[![POS Network Restored](assets/pos-network-restored.png)](assets/pos-network-restored.png)  
+[![POS Network Restored](assets/pos-network-restored.png)](assets/pos-network-restored.png)
 
 🎫 Ticket logged in osTicket: “POS lost network connectivity”
 
@@ -115,7 +118,7 @@ I configured osTicket to track and resolve issues:
 - Help Topics: Printer Issue, Network Drop, Firewall Block  
 - Agent: Brandon Martinez  
 
-📂 Config: [Ticketing-Setup.txt](configs/Ticketing-Setup.txt)  
+📂 Config: [Ticketing-Setup.txt](configs/Ticketing-Setup.txt)
 
 📸 Screenshots:  
 [![osTicket Ticket](assets/osticket-ticket.png)](assets/osticket-ticket.png)  
@@ -129,7 +132,7 @@ I configured osTicket to track and resolve issues:
 - [x] Currency set to USD ($)  
 - [x] Test sale completed  
 - [x] Printer misconfigured and fixed  
-- [x] Firewall block simulated and resolved  
+- [x] **MySQL firewall block simulated and resolved**  
 - [x] Network drop simulated and resolved  
 - [x] Tickets logged and closed in osTicket  
 
