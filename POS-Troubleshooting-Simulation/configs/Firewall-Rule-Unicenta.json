@@ -1,9 +1,0 @@
-{
-  "RuleName": "Block Unicenta",
-  "Program": "ProgramFiles\\unicenta-opos\\unicenta-opos.exe",
-  "Action": "Block",
-  "Direction": "Inbound + Outbound",
-  "Protocol": "Any",
-  "Enabled": true,
-}
-Notes: Blocking Java runtime prevents uniCenta POS from launching.

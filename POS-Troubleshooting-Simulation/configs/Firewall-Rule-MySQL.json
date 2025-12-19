@@ -1,0 +1,8 @@
+{
+  "firewall_rule_name": "Block MySQL",
+  "program": "C:\\Program Files\\MySQL\\MySQL Server 9.5\\bin\\mysqld.exe",
+  "action": "block",
+  "direction": "outbound",
+  "enabled": true,
+  "description": "Simulated issue: POS cannot connect to MySQL database"
+}
