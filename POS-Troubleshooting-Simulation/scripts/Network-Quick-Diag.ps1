@@ -1,20 +1,12 @@
-# Network Quick Diagnostic Script
-# This script runs basic network checks to verify connectivity.
+Write-Host "Running Network Quick Diagnostics..." -ForegroundColor Cyan
 
-# Show all adapter details
-ipconfig /all
+Write-Host "`nIP Configuration:" -ForegroundColor Yellow
+ipconfig
 
-# Test connectivity to Google DNS
-ping 8.8.8.8
+Write-Host "`nPinging Google DNS (8.8.8.8)..." -ForegroundColor Yellow
+ping 8.8.8.8 -n 4
 
-# Test connectivity to GitHub
-ping github.com
+Write-Host "`nDNS Lookup Test:" -ForegroundColor Yellow
+nslookup google.com
 
-# Resolve DNS for GitHub
-nslookup github.com
-
-# Release current IP address
-ipconfig /release
-
-# Renew IP address
-ipconfig /renew
+Write-Host "`nDiagnostics Complete." -ForegroundColor Green
