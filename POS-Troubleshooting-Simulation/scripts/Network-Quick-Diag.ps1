@@ -1,7 +1,7 @@
 Write-Host "Running Network Quick Diagnostics..." -ForegroundColor Cyan
 
 Write-Host "`nIP Configuration:" -ForegroundColor Yellow
-ipconfig
+ipconfig /all
 
 Write-Host "`nPinging Google DNS (8.8.8.8)..." -ForegroundColor Yellow
 ping 8.8.8.8 -n 4
