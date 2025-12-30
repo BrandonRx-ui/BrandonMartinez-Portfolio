@@ -39,7 +39,7 @@ Each project has:
 - Artifact folders (`configs`, `scripts`, `assets`) with supporting files
 
 ## 📄 Resume
-You can view my resume [here](BrandonMartinez-Resume.pdf).
+You can view my resume [here](BrandonMartinez_Resume_2025.pdf).
 
 ## 📫 Contact
 - Email: brama1988@yahoo.com  
